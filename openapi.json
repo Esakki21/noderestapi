@@ -1,0 +1,38 @@
+{
+    "openapi":"3.0.1",
+    "info":{
+        "title":"Node Rest API",
+        "description":"Testing api documentation",
+        "contact":{
+            "email":"hindujayadav2015@gmail.com"
+        },
+        "version":"1.0.0"
+    },
+    "servers":[
+        {
+            "url":"http://localhost/3000",
+            "description":"running on localhost"
+        }
+    ],
+    "components":{
+        "paths":{
+            "/":{
+                "get":{
+                    "tags":["TEST API"],
+                    "summary":"TEST API!",
+                    "operationID":"Sampleroute",
+                    "responses":{
+                        "200":{
+                            "description":"success",
+                            "content":{}
+                        },
+                        "500":{
+                            "description":"some error",
+                            "content":  { }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
